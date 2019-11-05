@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "birdosaur",
+    "version": "0.1",
+
+    "description": "A browser extension that replaces the word 'bird' with the word 'dinosaur' within webpages. Isn't that hilarious?!",
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.wikipedia.org/*"],
+            "js": ["birdosaur.js"]
+        }
+    ]
+}
