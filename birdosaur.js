@@ -2,7 +2,7 @@
 var textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT),
     iterNode,
     iterText,
-    birdRegEx = /bird/g
+    birdRegEx = /bird/ig
     replaceWith = "dinosaur";
 
   //iterate over each text node and make the replacement
